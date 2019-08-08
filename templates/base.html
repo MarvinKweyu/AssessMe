@@ -1,0 +1,170 @@
+{#{% load static %}<!doctype html>#}
+{#<html lang="en">#}
+{#  <head>#}
+{#    <meta charset="utf-8">#}
+{#    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">#}
+{#    <title>{% block title %}Django School{% endblock %}</title>#}
+{#    <link rel="icon" href="{% static 'img/favicon.png' %}">#}
+{#    <!-- <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet"> -->#}
+{#    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">#}
+{#    <link rel="stylesheet" type="text/css" href="{% static 'vendor/fontello-2f186091/css/fontello.css' %}">#}
+{#    <link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">#}
+{#    {% if user.is_authenticated and user.is_teacher %}#}
+{#      <link rel="stylesheet" type="text/css" href="{% static 'css/teachers.css' %}">#}
+{#    {% else %}#}
+{#      <link rel="stylesheet" type="text/css" href="{% static 'css/students.css' %}">#}
+{#    {% endif %}#}
+{#  </head>#}
+{#  <body>#}
+{#    <!-- <a href="https://github.com/sibtc/django-multiple-user-types-example"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a> -->#}
+{#    <div class="container my-4">#}
+{#      <div class="row justify-content-center">#}
+{#        <div class="col-md-10 col-sm-12">#}
+{#          <div class="row">#}
+{#            <div class="col-6">#}
+{#              <h1 class="logo">#}
+{#                <a href="{% url 'home' %}">#}
+{#                  Assessment#}
+{#                  {% if user.is_authenticated %}#}
+{#                    {% if user.is_teacher %}#}
+{#                      <span class="icon-feather" data-toggle="tooltip" data-placement="right" title="Teacher profile"></span>#}
+{#                    {% else %}#}
+{#                      <span class="icon-graduation-cap" data-toggle="tooltip" data-placement="right" title="Student profile"></span>#}
+{#                    {% endif %}#}
+{#                  {% endif %}#}
+{#                </a>#}
+{#              </h1>#}
+{#            </div>#}
+{#            <div class="col-6 text-right">#}
+{#              {% if user.is_authenticated %}#}
+{#                <p class="pt-3">Logged in as <strong>{{ user.username }}</strong>. <a href="{% url 'logout' %}">Log out</a>.</p>#}
+{#              {% else %}#}
+{#                <a href="{% url 'login' %}" class="btn btn-light" role="button">Log in</a>#}
+{#                <a href="{% url 'signup' %}" class="btn btn-primary" role="button">Sign up</a>#}
+{#              {% endif %}#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{##}
+{#          <div class="card mb-3">#}
+{#            <div class="card-body">#}
+{#              {% for message in messages %}#}
+{#                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">#}
+{#                  {{ message }}#}
+{#                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">#}
+{#                    <span aria-hidden="true">&times;</span>#}
+{#                  </button>#}
+{#                </div>#}
+{#              {% endfor %}#}
+{#              {% block content %}#}
+{#              {% endblock %}#}
+{#            </div>#}
+{#          </div>#}
+{#          <footer>#}
+{#            <a href="https://simpleisbetterthancomplex.com">© SimpleIsBetterThanComplex.com</a>#}
+{#            /#}
+{#            <a href="https://simpleisbetterthancomplex.com/tutorial/2018/01/18/how-to-implement-multiple-user-types-with-django.html">Read more about this example</a>#}
+{#            /#}
+{#            <a href="https://github.com/sibtc/django-multiple-user-types-example">GitHub repository</a>#}
+{#          </footer>#}
+{#        </div>#}
+{#      </div>#}
+{#    </div>#}
+{#    <!-- <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script> -->#}
+{#    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>#}
+{#    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>#}
+{#    <script type="text/javascript">#}
+{#      $(function () {#}
+{#        $('[data-toggle="tooltip"]').tooltip();#}
+{#      })#}
+{#    </script> -->#}
+{#  #}
+{#  #}
+{#  </body>#}
+{#</html>#}
+
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="utf-8">
+
+  <title>{% trans "Example Quiz Website" %} | {% block title %}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{% endblock %}">
+
+  <!-- styles -->
+  <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+   <a  class="navbar-brand" href="{% url 'home' %}">Assessment
+                  {% if user.is_authenticated %}
+                    {% if user.is_teacher %}
+                      <span class="icon-feather" data-toggle="tooltip" data-placement="right" title="Teacher profile"></span>
+                    {% else %}
+                      <span class="icon-graduation-cap" data-toggle="tooltip" data-placement="right" title="Student profile"></span>
+                    {% endif %}
+                  {% endif %}
+   </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+{#      <ul class="navbar-nav rm-auto">#}
+{#        {% if user.is_authenticated %}#}
+{#        <li class="nav-tem" style="color:gray">#}
+{#          <a href="{% url 'quiz_index' %}" class="nav-link">Quizzes</a>#}
+{#        </li>#}
+{#        <li class="nav-tem" style="color:gray">#}
+{#            <a href="{% url 'quiz_progress' %}" class="nav-link">Progress</a>#}
+{#          </li>#}
+{#        {% endif %}#}
+{##}
+{#      </ul>#}
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          {% if user.is_authenticated %}
+{#              <a class="nav-item">Hi {{ user.username }}</a>#}
+         <a class="nav-link" href="{% url 'logout' %}">logout</a>
+          {% else %}
+          <a class="nav-link" href="{% url 'login' %}">Login</a>
+          {% endif %}
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Before the quiz content -->
+
+  <div class="container">
+    {% if messages %} {% for message in messages %}
+    <div class="alert alert-warning alert-dismissable" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true"><sup>&times;</sup></span>
+      </button>
+      {{message}}
+    </div>
+    {% endfor %} {% endif %} {% block content %} {% endblock %}
+
+  </div>
+
+  <!-- After the quiz content -->
+
+
+</body>
+
+</html>
