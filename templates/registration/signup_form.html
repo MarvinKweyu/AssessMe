@@ -2,17 +2,19 @@
 
 {% load crispy_forms_tags %}
 
+{%block title%}Sign-up{%endblock%}
+
 {% block content %}
 <div class="container-fluid background"></div>
-<div class="row justify-content-center">
-  <!-- background effect -->
+  <div class="row justify-content-center">
+    <!-- background effect -->
     <div class="particles-js" >
-    <div class="login col-12">
-      <h2>Sign up as a {{ user_type }}</h2>
-      <form method="post" novalidate class="login-form">
-        {% csrf_token %}
-        <input type="hidden" name="next" value="{{ next }}">
-        {{ form|crispy }}
+      <div class="login col-12">
+        <h2>Sign up as a {{ user_type }}</h2>
+        <form method="post" novalidate class="login-form">
+          {% csrf_token %}
+          <input type="hidden" name="next" value="{{ next }}">
+          {{ form|crispy }}
         <button type="submit" class="btn btn-success">Sign up</button>
       </form>
 

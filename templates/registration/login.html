@@ -2,6 +2,8 @@
 
 {% load crispy_forms_tags %}
 
+{%block title%}Login{%endblock%}
+
 {% block content %}
 {% if form.non_field_errors %}
 <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -31,7 +33,7 @@
     </div>
 
     </div>
-    
+
   </div>
   </div>
 {% endblock %}
