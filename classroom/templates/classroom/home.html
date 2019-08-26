@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Welcome to the Django Schools! <span class="icon-emo-happy"></span></h2>
+  <h2>Welcome to the semester assessment ! <span class="icon-emo-happy"></span></h2>
   <p class="lead">
     If you already have an account, go ahead and <a href="{% url 'login' %}">log in</a>. If you are new to Django Schools, get started
     by creating a <a href="{% url 'student_signup' %}">student account</a> or a <a href="{% url 'teacher_signup' %}">teacher account</a>.
@@ -13,6 +13,5 @@
     In this application, users can sign up as a student or a teacher. Teachers can create quizzes and students can answer quizzes
     based on their interests.
   </p>
-{#  <p>Want to run this code locally? <a href="https://github.com/sibtc/django-multiple-user-types-example/blob/master/README.md">Read detailed instructions on how to run this project</a>.</p>#}
-{#  <p class="mb-0">Vitor Freitas<br><a href="https://twitter.com/vitorfs/">@vitorfs</a></p>#}
+
 {% endblock %}
