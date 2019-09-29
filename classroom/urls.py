@@ -1,9 +1,18 @@
 from django.urls import include, path
+from django.contrib.auth import views as auth_views
 
 from .views import classroom, students, teachers
 
 urlpatterns = [
     path('', classroom.home, name='home'),
+    # change password
+    path('password_change/', auth_views.PasswordChangeView.as_view(), name='password_change'),
+    path('password_change/done', auth_views.PasswordChangeDoneView.as_view(), name='password_change_done'),  # success message
+    # reset password
+    path('password_reset/', auth_views.PasswordResetView.as_view(), name='password_reset'),  # enter email for password
+    path('password_reset/done', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),  # we have sent you mail
+    path('reset/<uidb64>/<token>', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),  # enter new password
+    path('reset/done', auth_views.PasswordResetDoneView.as_view(), name='password_reset_complete'),   # password reset successfull
 
     path('students/', include(([
         path('', students.QuizListView.as_view(), name='quiz_list'),

@@ -13,3 +13,4 @@ def home(request):
         else:
             return redirect('students:quiz_list')
     return render(request, 'classroom/home.html')
+
