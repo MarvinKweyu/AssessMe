@@ -48,7 +48,7 @@ class QuizListView(ListView):
 @method_decorator([login_required, teacher_required], name='dispatch')
 class QuizCreateView(CreateView):
     model = Quiz
-    fields = ('name', 'subject', )
+    fields = ('name', 'subject', 'duration')
     template_name = 'classroom/teachers/quiz_add_form.html'
 
     def form_valid(self, form):

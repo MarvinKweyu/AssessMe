@@ -1,6 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.utils.html import escape, mark_safe
+import datetime
 
 
 class User(AbstractUser):
@@ -26,6 +27,7 @@ class Quiz(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='quizzes')
     name = models.CharField(max_length=255)
     subject = models.ForeignKey(Subject, on_delete=models.CASCADE, related_name='quizzes')
+    duration = models.DurationField(default=datetime.timedelta(hours=2))  # default quiz time of 2 hrs
 
     def __str__(self):
         return self.name
