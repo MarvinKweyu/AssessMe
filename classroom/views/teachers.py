@@ -62,7 +62,7 @@ class QuizCreateView(CreateView):
 @method_decorator([login_required, teacher_required], name='dispatch')
 class QuizUpdateView(UpdateView):
     model = Quiz
-    fields = ('name', 'subject', )
+    fields = ('name', 'subject','duration' )
     context_object_name = 'quiz'
     template_name = 'classroom/teachers/quiz_change_form.html'
 
