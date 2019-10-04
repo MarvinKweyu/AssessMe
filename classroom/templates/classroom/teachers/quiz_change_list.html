@@ -7,6 +7,7 @@
     </ol>
   </nav>
   <h2 class="mb-3">My Quizzes</h2>
+    <p>You can <a href="{% url 'password_change' %}">change account password</a></p>
   <a href="{% url 'teachers:quiz_add' %}" class="btn btn-primary mb-3" role="button">Add quiz</a>
     <a href="{% url 'teachers:course_change_list' %}" class="btn btn-primary mb-3" role="button">Courses</a>
   <div class="card">

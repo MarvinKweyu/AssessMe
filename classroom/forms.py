@@ -21,7 +21,7 @@ class TeacherSignUpForm(UserCreationForm):
 
 class StudentSignUpForm(UserCreationForm):
     interests = forms.ModelMultipleChoiceField(
-        queryset=Subject.objects.all(),
+        queryset= Subject.objects.all(),
         widget=forms.CheckboxSelectMultiple,
         required=True
     )

@@ -2,6 +2,8 @@
 
 {% load crispy_forms_tags %}
 
+{%block title%}Login{%endblock%}
+
 {% block content %}
 {% if form.non_field_errors %}
 <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -13,17 +15,26 @@
   </button>
 </div>
 {% endif %}
-<div class="row container">
-  <div class="col-lg-4 col-md-6 col-sm-8 col-12">
+<div class="container-fluid background">
+<div class="row justify-content-center">
+  <!-- background effect -->
+  <div id="particles-js">
+  <!-- <div class="col-lg-4 col-md-6 col-sm-8 col-12"> -->
+    <div class="login col-12">
     <h2>Log in</h2>
     <p> If you don't have an account,you can <a href="{%url 'student_signup'%}">sign up</a></p>
-      <form method="post" novalidate>
+      <form method="post" novalidate class="login-form">
         {% csrf_token %}
         <input type="hidden" name="next" value="{{ next }}">
         {{ form.username|as_crispy_field }}
         {{ form.password|as_crispy_field }}
         <button type="submit" class="btn btn-primary">Log in</button>
+        <p>Forgot your password? <a href="#">Recover</a></p>
       </form>
     </div>
+
+    </div>
+
+  </div>
   </div>
 {% endblock %}
