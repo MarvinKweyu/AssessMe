@@ -43,11 +43,6 @@ password: `sumee1911`
 username: `suhail`
 password: `sumee1910`
 
-## Running tests
-
-```
-python manage.py test classroom/tests/
-```
 
 ## License
 The project is based on [suhail](https://github.com/suhailvs/django-schools)
