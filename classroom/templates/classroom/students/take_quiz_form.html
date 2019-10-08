@@ -6,8 +6,15 @@
   <div class="progress mb-3">
     <div class="progress-bar" role="progressbar" aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ progress }}%"></div>
   </div>
-  <h2><span class="badge badge-secondary">{{ answered_questions|add:"1" }}/{{total_questions}}</span></h2>
-  
+  <div class="row">
+    <div class="col-md-9 col-sm12">
+      <h2><span class="badge badge-secondary">{{ answered_questions|add:"1" }}/{{total_questions}}</span></h2>
+    </div>
+    <div class="col-md-3 col-sm-12">
+{#      <h2><span class="badge badge-secondary align-right">{{ quiz.duration}}</span></h2>#}
+      <h2 id="timer"></h2>
+    </div>
+  </div>
   <h2 class="mb-3">{{ quiz.name }}</h2>
   <p class="lead">{{ question.text }}</p>
   <form method="post" novalidate>
@@ -15,4 +22,6 @@
     {{ form|crispy }}
     <button type="submit" class="btn btn-primary">Next →</button>
   </form>
+  {% load static %}
+  <script src="{%  static 'scripts/main.js' %}"></script>
 {% endblock %}
