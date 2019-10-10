@@ -8,30 +8,14 @@ document.addEventListener('DOMContentLoaded', function(){
 let h = "";
 let m = "";
 let s = "";
-// let newDateObj = new Date();
-// let oldDateObj = new Date();
-
 
 if(localStorage.getItem("secondsLeft") == null) {
     let timer = document.getElementById("time").value;
     [h, m, s] = timer.split(':');
-
-    // let hourtoMin = h * 60;
-    // min = parseInt(hourtoMin) + parseInt(m);
-    // oldDateObj = new Date();
-    // newDateObj = new Date();
-    // newDateObj.setTime(oldDateObj.getTime() + ((min * 60 * 1000) + parseInt(s)));
 } else {
     h = localStorage.getItem("hoursLeft");
     m = localStorage.getItem("minutesLeft");
     s = localStorage.getItem("secondsLeft");
-
-
-    // let hourtoMin = h * 60;
-    // min = parseInt(hourtoMin) + parseInt(m);
-    // oldDateObj = new Date();
-    // newDateObj = new Date();
-    // newDateObj.setTime(oldDateObj.getTime() + ((min * 60 * 1000) + parseInt(s)));
 }
 h = parseInt(h);
 m = parseInt(m);
@@ -41,7 +25,7 @@ let hourToMin = h * 60;
 let min = hourToMin + m;
 let oldDateObj = new Date();
 let newDateObj = new Date();
-newDateObj.setTime(oldDateObj.getTime() + ((min * 60 * 1000) + s));
+newDateObj.setTime(oldDateObj.getTime() + ((min * 60 * 1000) + (s * 1000)));
 
 // Update the count down every 1 second
 let x = setInterval(function() {
