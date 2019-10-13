@@ -21,10 +21,16 @@ python3 -m venv env
 source ./env/bin/activate
 pip install -r requirements.txt
 ```
-
+Create a database:
 ```bash
 cd AssessmentApplication
+python manage.py migrate 
 ```
+Load use case data to work with.
+```
+python manage.py loaddata use_case_data.json
+``` 
+
 Finally, run the development server:
 
 ```bash

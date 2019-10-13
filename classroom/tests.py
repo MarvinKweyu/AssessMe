@@ -4,7 +4,7 @@ from django.urls import reverse
 
 
 class LoginPageTest(TestCase):
-    fixtures = ["datas.json"]
+    fixtures = ["use_case_data.json"]
 
     def setUp(self):
         self.client = Client()
@@ -28,6 +28,6 @@ class LoginPageTest(TestCase):
     def test_login_as_teacher(self):
         loginurl = reverse('login')
         # login as teacher
-        response = self.client.post(loginurl, {'username': 'sumee', 'password': 'sumee1910'}, follow=True)
+        response = self.client.post(loginurl, {'username': 'sumee', 'password': 'sumee1911'}, follow=True)
         self.assertEqual(response.redirect_chain[1][0], reverse('teachers:quiz_change_list'))
         self.assertIn(b'My Quizzes', response.content)
