@@ -9,6 +9,8 @@ from django.urls import reverse, reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views.generic import (CreateView, DeleteView, DetailView, ListView,
                                   UpdateView)
+import csv
+from django.http import HttpResponse
 
 from ..decorators import teacher_required
 from ..forms import BaseAnswerInlineFormSet, QuestionForm, TeacherSignUpForm
@@ -120,6 +122,28 @@ class QuizResultsView(DetailView):
     def get_queryset(self):
         return self.request.user.quizzes.all()
 
+@login_required
+@teacher_required
+def download_results(request, pk):
+    """ Download a CSV of student results for a test."""
+    response = HttpResponse(content_type='text/csv')
+    quiz = get_object_or_404(Quiz, pk=pk)
+    # name file as quiz name without spaces
+    response['Content-Disposition'] = f'attachment;filename="results_for_test{quiz.name.replace(" ","")}.csv"'
+    writer = csv.writer(response)  # write to response
+    taken_quizes = quiz.taken_quizzes.select_related('student__user').order_by('-date')
+    quiz_score = quiz.taken_quizzes.aggregate(average_score=Avg('score'))
+    # write header of csv
+    writer.writerow(['Student', 'Date submitted', 'Score'])
+    # write data rows
+    for taken_quiz in taken_quizes:
+        name = taken_quiz.student.user.username
+        submit_date = taken_quiz.date.strftime("%d/%m/%Y,%H:%M:%S")
+        score = taken_quiz.score
+
+        writer.writerow([name, submit_date, score])
+
+    return  response
 
 @login_required
 @teacher_required
