@@ -2,7 +2,7 @@
 
 Thank you for taking your time to  look at the [**AssessMe**](https://github.com/MarvinKweyu/AssessMe) project. Let's build better software together.:clap:
 
-Use the following as guidelines to making your contributions and do free to propose changes to this document in a pull request.
+Use the following as guidelines to making your contributions and do feel free to propose changes to this document in a pull request.
 
 ### Issues
 Check if the issue has been addressed or is in progress and if not , only then do you create a new issue.
