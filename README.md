@@ -1,4 +1,4 @@
-# AssessmentApplication
+# AssessMe
 
 [![Python Version](https://img.shields.io/badge/python-3.7-brightgreen.svg)](https://python.org)
 [![Django Version](https://img.shields.io/badge/django-2.2-brightgreen.svg)](https://djangoproject.com)
@@ -10,20 +10,20 @@
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/MarvinKweyu/AssessmentApplication.git
+git clone https://github.com/MarvinKweyu/AssessMe.git
 ```
 
 Create Virtual Env and Install the requirements:
 
 ```bash
-cd AssessmentApplication
+cd AssessmentMe
 python3 -m venv env
 source ./env/bin/activate
 pip install -r requirements.txt
 ```
 Create a database:
 ```bash
-cd AssessmentApplication
+cd AssessMe
 python manage.py migrate 
 ```
 Load use case data to work with.
@@ -53,4 +53,4 @@ password: `sumee1910`
 ## License
 The project is based on [suhail](https://github.com/suhailvs/django-schools)
 
-The source code is released under the [MIT License](https://github.com/MarvinKweyu/AssessmentApplication/blob/master/LICENSE).
+The source code is released under the [MIT License](https://github.com/MarvinKweyu/AssessMe/blob/master/LICENSE).
