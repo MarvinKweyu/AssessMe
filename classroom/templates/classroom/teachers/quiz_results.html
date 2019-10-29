@@ -11,6 +11,7 @@
     </ol>
   </nav>
   <h2 class="mb-3">{{ quiz.name }} Results</h2>
+    <p><a href="{% url 'teachers:download_results' quiz.pk %}">Download results as a CSV</a></p>
 
   <div class="card">
     <div class="card-header">
