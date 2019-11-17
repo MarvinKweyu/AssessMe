@@ -2,10 +2,32 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.7-brightgreen.svg)](https://python.org)
 [![Django Version](https://img.shields.io/badge/django-2.2-brightgreen.svg)](https://djangoproject.com)
+[![CircleCI](https://circleci.com/gh/MarvinKweyu/AssessMe.svg?style=svg)](https://circleci.com/gh/MarvinKweyu/AssessMe)
 
  In this Django app, teachers can create quizzes and students can sign up and take quizzes related to their interests.
 
-## Running the Project Locally
+
+ ### Table of Contents
+ [ Key features](#Features)
+
+ [ Running the project locally ](#Setup)
+
+ [Contributions](#Contributions)
+
+ [License](#Licence)
+
+
+
+## Features
+---
+
+- Password management
+- Quiz timer
+- Teacher download results option
+
+
+## Setup
+---
 
 First, clone the repository to your local machine:
 
@@ -51,10 +73,11 @@ password: `sumee1910`
 
 
 ## Contributions
+---
 Contributions are welcome.
 Do remember to take a look at the project [contribution guidelines](./CONTRIBUTING.md)
 
 ## License
-The project is based on [suhail](https://github.com/suhailvs/django-schools)
+---
 
-The source code is released under the [MIT License](https://github.com/MarvinKweyu/AssessMe/blob/master/LICENSE).
+This project was inspired by [suhail's](https://github.com/suhailvs/django-schools) work on the django quiz application and is released under the [MIT License](https://github.com/MarvinKweyu/AssessMe/blob/master/LICENSE).
