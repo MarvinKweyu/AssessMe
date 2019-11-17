@@ -14,7 +14,7 @@
 
  [Contributions](#Contributions)
 
- [License](#Licence)
+ [License](#License)
 
 
 
