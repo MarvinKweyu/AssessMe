@@ -40,7 +40,7 @@
 ### Downloading the latest release.
 
 Get the latest release version from the page
-[release page](https://github.com/MarvinKweyu/ColorRecognition/releases)
+[release page](https://github.com/MarvinKweyu/AssessMe/releases)
 
 
 Create Virtual Env and Install the requirements:
