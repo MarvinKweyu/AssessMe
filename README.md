@@ -4,7 +4,15 @@
 [![Django Version](https://img.shields.io/badge/django-2.2-brightgreen.svg)](https://djangoproject.com)
 [![CircleCI](https://circleci.com/gh/MarvinKweyu/AssessMe.svg?style=svg)](https://circleci.com/gh/MarvinKweyu/AssessMe)
 
- In this Django app, teachers can create quizzes and students can sign up and take quizzes related to their interests.
+
+![Release](https://img.shields.io/github/v/release/MarvinKweyu/AssessMe?include_prereleases)
+![Contributors](https://img.shields.io/github/contributors/MarvinKweyu/AssessMe)
+![Downloads](https://img.shields.io/github/downloads/MarvinKweyu/AssessMe/total?style=flat)
+
+
+ >An applicaition that allows teachers to create quizzes and students to
+ take the quiz in relation to their interests
+
 
 
  ### Table of Contents
@@ -13,6 +21,7 @@
  [ Running the project locally ](#Setup)
 
  [Contributions](#Contributions)
+
 
  [License](#License)
 
@@ -28,12 +37,11 @@
 
 ## Setup
 ---
+### Downloading the latest release.
 
-First, clone the repository to your local machine:
+Get the latest release version from the page
+[release page](https://github.com/MarvinKweyu/ColorRecognition/releases)
 
-```bash
-git clone https://github.com/MarvinKweyu/AssessMe.git
-```
 
 Create Virtual Env and Install the requirements:
 
