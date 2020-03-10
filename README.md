@@ -3,8 +3,6 @@
 [![Python Version](https://img.shields.io/badge/python-3.7-brightgreen.svg)](https://python.org)
 [![Django Version](https://img.shields.io/badge/django-2.2-brightgreen.svg)](https://djangoproject.com)
 [![CircleCI](https://circleci.com/gh/MarvinKweyu/AssessMe.svg?style=svg)](https://circleci.com/gh/MarvinKweyu/AssessMe)
-
-
 ![Release](https://img.shields.io/github/v/release/MarvinKweyu/AssessMe?include_prereleases)
 ![Contributors](https://img.shields.io/github/contributors/MarvinKweyu/AssessMe)
 ![Downloads](https://img.shields.io/github/downloads/MarvinKweyu/AssessMe/total?style=flat)
