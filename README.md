@@ -1,4 +1,5 @@
-# AssessMe
+<h1 style="text-align: center;"><span style="font-weight:bold">AssessMe</span></h1>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Python Version](https://img.shields.io/badge/python-3.7-brightgreen.svg)](https://python.org)
