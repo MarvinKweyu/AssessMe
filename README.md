@@ -8,6 +8,7 @@
 ![Release](https://img.shields.io/github/v/release/MarvinKweyu/AssessMe?include_prereleases)
 ![Contributors](https://img.shields.io/github/contributors/MarvinKweyu/AssessMe)
 ![Downloads](https://img.shields.io/github/downloads/MarvinKweyu/AssessMe/total?style=flat)
+[![View](http://hits.dwyl.com/MarvinKweyu/AssessMe.svg)](http://hits.dwyl.com/MarvinKweyu/AssessMe)
 
 
  >An applicaition that allows teachers to create quizzes and students to
