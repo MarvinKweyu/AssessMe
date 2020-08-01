@@ -41,6 +41,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "f6zfwtrv860vfvljfzkox5x5u2ey756t",
+    "fields": {
+        "session_data": "NGFiOGVmMjQ3NmNmMDY2MDY0ODFiOTVhZTA5NmM5NzVmMWRmNDZlNjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhZTYwYWEyZjU2YzhjMzU4NTAwOTZkNmI3ODUzM2RlNjk2OWYyMzBhIn0=",
+        "expire_date": "2020-08-15T13:48:07.690Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "jcfmbz9bfsmefkgcn8jmvkcy3e7uakop",
     "fields": {
         "session_data": "M2ZhMGQ1ZWFmYmNkZGJiYTBjMTM5MTYwYjljYTFjMDMyODc4YzkwODp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1Y2JhYjE2M2M3ZWI0MmY0ZmQwZjQ2NzMwODcxYTY4NDRiY2Q4Y2QxIn0=",
@@ -49,50 +57,18 @@
 },
 {
     "model": "sessions.session",
+    "pk": "u399l7f7dgulgiwtobl3mwd55zg78zjv",
+    "fields": {
+        "session_data": "NGFiOGVmMjQ3NmNmMDY2MDY0ODFiOTVhZTA5NmM5NzVmMWRmNDZlNjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhZTYwYWEyZjU2YzhjMzU4NTAwOTZkNmI3ODUzM2RlNjk2OWYyMzBhIn0=",
+        "expire_date": "2020-08-15T13:30:21.878Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "y8ifcfl7ob68acie0dpl2blnbtl37epb",
     "fields": {
         "session_data": "MzA5NGVmNDAzOTA4ZDZmMWZiYmZiN2M1OGVlMmE2NGEwYmRmMDNjNzp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkOTgwYWE3YmNlZGViNmQyMTM2MDFjOTI1OTExMmYzOTEyN2EwODgwIn0=",
         "expire_date": "2019-10-18T14:28:10.758Z"
-    }
-},
-{
-    "model": "classroom.user",
-    "pk": 1,
-    "fields": {
-        "password": "pbkdf2_sha256$150000$wAmFVj6qfd3t$T1/EPDSOGFsR0q1ZzLTOw+8RGaZ9vrW6HtmjPHyAnz4=",
-        "last_login": "2019-10-13T09:25:27.837Z",
-        "is_superuser": false,
-        "username": "suhail",
-        "first_name": "",
-        "last_name": "",
-        "email": "",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2018-06-21T04:47:59.795Z",
-        "is_student": true,
-        "is_teacher": false,
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "classroom.user",
-    "pk": 2,
-    "fields": {
-        "password": "pbkdf2_sha256$150000$5FGRgR5JpVsF$aOF/ZkUDV/Y9wa15yRDrgN94HrRy8glYkVi3tTW83TQ=",
-        "last_login": "2019-10-13T09:24:28.390Z",
-        "is_superuser": false,
-        "username": "sumee",
-        "first_name": "",
-        "last_name": "",
-        "email": "",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2018-06-21T04:48:26.868Z",
-        "is_student": false,
-        "is_teacher": true,
-        "groups": [],
-        "user_permissions": []
     }
 },
 {
@@ -110,6 +86,46 @@
         "is_active": true,
         "date_joined": "2019-08-07T08:38:00.178Z",
         "is_student": false,
+        "is_teacher": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "classroom.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$xjqhHi5rF8LX$oyMhS8ZDIaoEfvplkaF0bvgMkKHz4YNFR2CU7X2TE5k=",
+        "last_login": "2020-08-01T13:45:24.323Z",
+        "is_superuser": false,
+        "username": "teacher",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-08-01T13:32:23.709Z",
+        "is_student": false,
+        "is_teacher": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "classroom.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$psnZr9sdtn5Q$+LxVxtA537KyVzqjcnaoKyF21Ov7P36Z0msoDkvrLNI=",
+        "last_login": "2020-08-01T13:44:15.218Z",
+        "is_superuser": false,
+        "username": "student",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-08-01T13:44:14.938Z",
+        "is_student": true,
         "is_teacher": false,
         "groups": [],
         "user_permissions": []
@@ -149,589 +165,190 @@
 },
 {
     "model": "classroom.quiz",
-    "pk": 1,
+    "pk": 9,
     "fields": {
-        "owner": 2,
-        "name": "Staticstics 1 CAT 1",
-        "subject": 4,
-        "duration": "02:00:00"
-    }
-},
-{
-    "model": "classroom.quiz",
-    "pk": 2,
-    "fields": {
-        "owner": 2,
-        "name": "Statisctics 1: CAT 2",
-        "subject": 3,
-        "duration": "02:00:00"
-    }
-},
-{
-    "model": "classroom.quiz",
-    "pk": 3,
-    "fields": {
-        "owner": 2,
-        "name": "CAT 2",
+        "owner": 5,
+        "name": "Introduction to Computer Science",
         "subject": 1,
         "duration": "02:00:00"
     }
 },
 {
     "model": "classroom.quiz",
-    "pk": 4,
+    "pk": 10,
     "fields": {
-        "owner": 2,
-        "name": "ee",
+        "owner": 5,
+        "name": "Data structures and algorithms",
+        "subject": 2,
+        "duration": "02:00:00"
+    }
+},
+{
+    "model": "classroom.quiz",
+    "pk": 11,
+    "fields": {
+        "owner": 5,
+        "name": "Discrete Mathematics",
         "subject": 1,
         "duration": "02:00:00"
     }
 },
 {
-    "model": "classroom.quiz",
-    "pk": 5,
-    "fields": {
-        "owner": 2,
-        "name": "Bayesian CAT 1",
-        "subject": 4,
-        "duration": "02:00:00"
-    }
-},
-{
-    "model": "classroom.quiz",
-    "pk": 6,
-    "fields": {
-        "owner": 2,
-        "name": "Statistics CAT 2",
-        "subject": 2,
-        "duration": "02:00:00"
-    }
-},
-{
-    "model": "classroom.quiz",
-    "pk": 7,
-    "fields": {
-        "owner": 2,
-        "name": "FTS CAT 1",
-        "subject": 4,
-        "duration": "02:00:00"
-    }
-},
-{
-    "model": "classroom.quiz",
-    "pk": 8,
-    "fields": {
-        "owner": 2,
-        "name": "Statistics CAT 2",
-        "subject": 2,
-        "duration": "02:00:00"
-    }
-},
-{
     "model": "classroom.question",
-    "pk": 1,
-    "fields": {
-        "quiz": 1,
-        "text": "When was the Treaty of Versailles signed?"
-    }
-},
-{
-    "model": "classroom.question",
-    "pk": 2,
-    "fields": {
-        "quiz": 1,
-        "text": "Britain, France, USA, Germany, Italy, and Russia."
-    }
-},
-{
-    "model": "classroom.question",
-    "pk": 3,
-    "fields": {
-        "quiz": 1,
-        "text": "The war ended on November 11 1918."
-    }
-},
-{
-    "model": "classroom.question",
-    "pk": 4,
-    "fields": {
-        "quiz": 1,
-        "text": "The name of the new government in Germany was called the Wiemar Republic."
-    }
-},
-{
-    "model": "classroom.question",
-    "pk": 5,
-    "fields": {
-        "quiz": 2,
-        "text": "What is 1 plus 1"
-    }
-},
-{
-    "model": "classroom.question",
-    "pk": 6,
-    "fields": {
-        "quiz": 3,
-        "text": "Sample question"
-    }
-},
-{
-    "model": "classroom.question",
-    "pk": 7,
-    "fields": {
-        "quiz": 4,
-        "text": "ee"
-    }
-},
-{
-    "model": "classroom.question",
-    "pk": 8,
-    "fields": {
-        "quiz": 5,
-        "text": "What is Bayesian"
-    }
-},
-{
-    "model": "classroom.question",
-    "pk": 9,
-    "fields": {
-        "quiz": 6,
-        "text": "Define statistics"
-    }
-},
-{
-    "model": "classroom.question",
-    "pk": 10,
-    "fields": {
-        "quiz": 2,
-        "text": "Define statistics"
-    }
-},
-{
-    "model": "classroom.question",
-    "pk": 11,
-    "fields": {
-        "quiz": 7,
-        "text": "What is financial Time series?"
-    }
-},
-{
-    "model": "classroom.question",
-    "pk": 12,
-    "fields": {
-        "quiz": 8,
-        "text": "Define statistics"
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 1,
-    "fields": {
-        "question": 1,
-        "text": "June 29 of 1919",
-        "is_correct": true
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 2,
-    "fields": {
-        "question": 1,
-        "text": "June 29 of 1920",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 3,
-    "fields": {
-        "question": 1,
-        "text": "March 29 of 1919",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 4,
-    "fields": {
-        "question": 1,
-        "text": "August 29 of 1920",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 5,
-    "fields": {
-        "question": 2,
-        "text": "How much money did Germany have to pay as a reparation?",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 6,
-    "fields": {
-        "question": 2,
-        "text": "Which countries were involved in World War 1?",
-        "is_correct": true
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 7,
-    "fields": {
-        "question": 2,
-        "text": "What does BRAT stand for in the Treaty of Versailles?",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 8,
-    "fields": {
-        "question": 2,
-        "text": "What does MAIN stand for when it comes to the causes of the first world war?",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 9,
-    "fields": {
-        "question": 3,
-        "text": "When was the Treaty of Versailles signed?",
-        "is_correct": true
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 10,
-    "fields": {
-        "question": 3,
-        "text": "Why did Germany declare war on Russia?",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 11,
-    "fields": {
-        "question": 3,
-        "text": "When did World War 1 begin?",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 12,
-    "fields": {
-        "question": 3,
-        "text": "When did World War 1 end?",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
     "pk": 13,
     "fields": {
-        "question": 4,
-        "text": "What does MAIN stand for when it comes to the causes of the first world war?",
-        "is_correct": false
+        "quiz": 9,
+        "text": "Define  computer science"
     }
 },
 {
-    "model": "classroom.answer",
+    "model": "classroom.question",
     "pk": 14,
     "fields": {
-        "question": 4,
-        "text": "What was the name of the new government in Germany after World War 1?",
-        "is_correct": true
+        "quiz": 9,
+        "text": "Which of the following is not a python framework?"
     }
 },
 {
-    "model": "classroom.answer",
+    "model": "classroom.question",
     "pk": 15,
     "fields": {
-        "question": 4,
-        "text": "Were the Big Three happy about the outcome of the Treaty of Versailles?",
-        "is_correct": false
+        "quiz": 11,
+        "text": "Negate the following statement: 'It is raining'"
     }
 },
 {
     "model": "classroom.answer",
-    "pk": 16,
+    "pk": 33,
     "fields": {
-        "question": 4,
-        "text": "How much money did Germany have to pay as a reparation?",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 17,
-    "fields": {
-        "question": 5,
-        "text": "1",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 18,
-    "fields": {
-        "question": 5,
-        "text": "0",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 19,
-    "fields": {
-        "question": 5,
-        "text": "2",
+        "question": 13,
+        "text": "A branch of science that deals with the theory of computation or the design of computers",
         "is_correct": true
     }
 },
 {
     "model": "classroom.answer",
-    "pk": 20,
+    "pk": 34,
     "fields": {
-        "question": 5,
-        "text": "3",
+        "question": 13,
+        "text": "The study of software.",
         "is_correct": false
     }
 },
 {
     "model": "classroom.answer",
-    "pk": 21,
+    "pk": 35,
     "fields": {
-        "question": 8,
-        "text": "test1",
+        "question": 13,
+        "text": "Algorithms design principles",
         "is_correct": false
     }
 },
 {
     "model": "classroom.answer",
-    "pk": 22,
+    "pk": 36,
     "fields": {
-        "question": 8,
-        "text": "test 2",
+        "question": 13,
+        "text": "A new field of information technology",
+        "is_correct": false
+    }
+},
+{
+    "model": "classroom.answer",
+    "pk": 37,
+    "fields": {
+        "question": 14,
+        "text": "Django",
+        "is_correct": false
+    }
+},
+{
+    "model": "classroom.answer",
+    "pk": 38,
+    "fields": {
+        "question": 14,
+        "text": "Hug",
+        "is_correct": false
+    }
+},
+{
+    "model": "classroom.answer",
+    "pk": 39,
+    "fields": {
+        "question": 14,
+        "text": "CPython",
         "is_correct": true
     }
 },
 {
     "model": "classroom.answer",
-    "pk": 23,
+    "pk": 40,
     "fields": {
-        "question": 8,
-        "text": "I don't know",
+        "question": 14,
+        "text": "FastAPI",
         "is_correct": false
     }
 },
 {
     "model": "classroom.answer",
-    "pk": 24,
+    "pk": 41,
     "fields": {
-        "question": 8,
-        "text": "sample",
+        "question": 15,
+        "text": "It is sunny",
         "is_correct": false
     }
 },
 {
     "model": "classroom.answer",
-    "pk": 25,
+    "pk": 42,
     "fields": {
-        "question": 9,
-        "text": "None",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 26,
-    "fields": {
-        "question": 9,
-        "text": "Zero",
+        "question": 15,
+        "text": "It is not raining",
         "is_correct": true
     }
 },
 {
     "model": "classroom.answer",
-    "pk": 27,
+    "pk": 43,
     "fields": {
-        "question": 9,
-        "text": "Sample",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 28,
-    "fields": {
-        "question": 10,
-        "text": "None",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 29,
-    "fields": {
-        "question": 10,
-        "text": "Sample",
-        "is_correct": false
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 30,
-    "fields": {
-        "question": 10,
-        "text": "Zero",
-        "is_correct": true
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 31,
-    "fields": {
-        "question": 12,
-        "text": "svtv",
-        "is_correct": true
-    }
-},
-{
-    "model": "classroom.answer",
-    "pk": 32,
-    "fields": {
-        "question": 12,
-        "text": "rgtgy",
+        "question": 15,
+        "text": "I do not know",
         "is_correct": false
     }
 },
 {
     "model": "classroom.student",
-    "pk": 1,
+    "pk": 6,
     "fields": {
         "interests": [
-            4
+            1
         ]
     }
 },
 {
     "model": "classroom.takenquiz",
-    "pk": 1,
-    "fields": {
-        "student": 1,
-        "quiz": 1,
-        "score": 25.0,
-        "date": "2019-08-06T20:46:31.262Z"
-    }
-},
-{
-    "model": "classroom.takenquiz",
-    "pk": 2,
-    "fields": {
-        "student": 1,
-        "quiz": 2,
-        "score": 100.0,
-        "date": "2019-08-06T20:52:14.595Z"
-    }
-},
-{
-    "model": "classroom.takenquiz",
-    "pk": 3,
-    "fields": {
-        "student": 1,
-        "quiz": 6,
-        "score": 0.0,
-        "date": "2019-08-08T16:48:33.564Z"
-    }
-},
-{
-    "model": "classroom.takenquiz",
-    "pk": 4,
-    "fields": {
-        "student": 1,
-        "quiz": 5,
-        "score": 0.0,
-        "date": "2019-08-27T04:10:37.340Z"
-    }
-},
-{
-    "model": "classroom.takenquiz",
-    "pk": 5,
-    "fields": {
-        "student": 1,
-        "quiz": 8,
-        "score": 100.0,
-        "date": "2019-08-27T09:41:41.557Z"
-    }
-},
-{
-    "model": "classroom.studentanswer",
-    "pk": 1,
-    "fields": {
-        "student": 1,
-        "answer": 5
-    }
-},
-{
-    "model": "classroom.studentanswer",
-    "pk": 2,
-    "fields": {
-        "student": 1,
-        "answer": 13
-    }
-},
-{
-    "model": "classroom.studentanswer",
-    "pk": 3,
-    "fields": {
-        "student": 1,
-        "answer": 12
-    }
-},
-{
-    "model": "classroom.studentanswer",
-    "pk": 4,
-    "fields": {
-        "student": 1,
-        "answer": 1
-    }
-},
-{
-    "model": "classroom.studentanswer",
-    "pk": 5,
-    "fields": {
-        "student": 1,
-        "answer": 19
-    }
-},
-{
-    "model": "classroom.studentanswer",
     "pk": 6,
     "fields": {
-        "student": 1,
-        "answer": 25
+        "student": 6,
+        "quiz": 9,
+        "score": 50.0,
+        "date": "2020-08-01T13:44:56.573Z"
     }
 },
 {
     "model": "classroom.studentanswer",
-    "pk": 7,
+    "pk": 9,
     "fields": {
-        "student": 1,
-        "answer": 24
+        "student": 6,
+        "answer": 34
     }
 },
 {
     "model": "classroom.studentanswer",
-    "pk": 8,
+    "pk": 10,
     "fields": {
-        "student": 1,
-        "answer": 31
+        "student": 6,
+        "answer": 39
     }
 }
 ]

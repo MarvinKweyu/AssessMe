@@ -90,4 +90,4 @@ local_settings.py
 
 .env
 #  return incase fail
-# db.sqlite3
+db.sqlite3
