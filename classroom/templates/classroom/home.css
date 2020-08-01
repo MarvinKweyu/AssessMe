@@ -4,6 +4,14 @@
 	box-sizing: border-box;
 }
 
+.intro{
+	padding-top: 125px !important;
+}
+
+.details{
+	color: red;
+}
+
 body {
 	background: #f6f5f7;
 	display: flex;
@@ -249,3 +257,4 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+

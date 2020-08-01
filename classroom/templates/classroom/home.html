@@ -1,12 +1,36 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Welcome to the semester assessment ! <span class="icon-emo-happy"></span></h2>
+<div class="intro">
+  <h2>Welcome to the AssessMe Project ! <span class="icon-emo-happy"></span></h2>
   <p class="lead">
-    If you already have an account, go ahead and <a href="{% url 'login' %}">log in</a>. 
-    Don't have an account? Create your<a href="{% url 'student_signup' %}">student account</a> or a <a href="{% url 'teacher_signup' %}">teacher account</a>.
+    If you already have an account, go ahead and <a href="{% url 'login' %}">log in</a>.
+    Don't have an account? Create your <a href="{% url 'student_signup' %}">student account</a> or a <a
+      href="{% url 'teacher_signup' %}">teacher account</a>.
   </p>
   <hr>
-{#  <h3>What's this about?</h3>#}
+</div>
+<div class="details lead">
+  <h3>What's this about?</h3>
+  <p>
+    I'm an online quiz application. Allowing instructors to create assessmets, and hence the name `AssessMe`, and,
+    consecutively,
+    students take them. Do feel free to test me out.
+    <br><br>
+    For starters, you can log in using:
+    <br>
+    <span style="font-weight: bold;">Teacher account:</span>
+    <br>
+    <span>username: <span style="font-style: italic; padding-right: 20px;">teacher </span> password: <span
+        style="font-style: italic; padding-right: 20px;">teacher </span></span>
+    <br>
+    <span style="font-weight: bold;">Student account:</span>
+    <br>
+    <span>username: <span style="font-style: italic; padding-right: 20px;">student </span> password: <span
+        style="font-style: italic; padding-right: 20px;">student </span></span>
+  </p>
+  <br>
+  <p>Regards, <br><a href="https://marvinkweyu.thegreencodes.com/" target="_blank" rel="noopener">Marvin</a></p>
+</div>
 
 {% endblock %}
