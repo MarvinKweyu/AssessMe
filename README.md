@@ -35,13 +35,22 @@
 - Quiz timer
 - Teacher download results option
 
+### Running application
+---
+The latest release is running right here: [The Assessme Project](https://assessme-project.herokuapp.com/)
 
 ## Setup
 ---
 ### Downloading the latest release.
 
-Get the latest release version from the page
+Knab yourself the latest release version from the page
 [release page](https://github.com/MarvinKweyu/AssessMe/releases)
+
+
+---
+
+
+### Development
 
 
 Create Virtual Env and Install the requirements:
@@ -72,13 +81,13 @@ The project will be available at http://127.0.0.1:8000, Login using::
 
 **Teacher**
 
-username: `sumee`
-password: `sumee1911`
+username: `teacher`
+password: `teacher`
 
 **Student**
 
-username: `suhail`
-password: `sumee1910`
+username: `student`
+password: `student`
 
 
 ## Contributions
