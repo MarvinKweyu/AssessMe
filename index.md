@@ -1,37 +1,101 @@
-## Welcome to GitHub Pages
+<h1 style="text-align: center;"><span style="font-weight:bold">AssessMe</span></h1>
 
-You can use the [editor on GitHub](https://github.com/MarvinKweyu/AssessMe/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![Python Version](https://img.shields.io/badge/python-3.7-brightgreen.svg)](https://python.org)
+[![Django Version](https://img.shields.io/badge/django-2.2-brightgreen.svg)](https://djangoproject.com)
+[![CircleCI](https://circleci.com/gh/MarvinKweyu/AssessMe.svg?style=svg)](https://circleci.com/gh/MarvinKweyu/AssessMe)
+![Release](https://img.shields.io/github/v/release/MarvinKweyu/AssessMe?include_prereleases)
+![Contributors](https://img.shields.io/github/contributors/MarvinKweyu/AssessMe)
+![Downloads](https://img.shields.io/github/downloads/MarvinKweyu/AssessMe/total?style=flat)
+[![View](http://hits.dwyl.com/MarvinKweyu/AssessMe.svg)](http://hits.dwyl.com/MarvinKweyu/AssessMe)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+ >An applicaition that allows teachers to create quizzes and students to
+ take the quiz in relation to their interests
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+ ### Table of Contents
+ [ Key features](#Features)
 
-- Bulleted
-- List
+ [ Running the project locally ](#Setup)
 
-1. Numbered
-2. List
+ [Contributions](#Contributions)
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+ [License](#License)
+
+
+
+## Features
+---
+
+- Password management
+- Quiz timer
+- Teacher download results option
+
+### Running application
+---
+The latest release is running right here: [The Assessme Project](https://assessme-project.herokuapp.com/)
+
+## Setup
+---
+### Downloading the latest release.
+
+Knab yourself the latest release version from the page
+[release page](https://github.com/MarvinKweyu/AssessMe/releases)
+
+
+---
+
+
+### Development
+
+
+Create Virtual Env and Install the requirements:
+
+```bash
+cd AssessMe
+python3 -m venv env
+source ./env/bin/activate
+pip install -r requirements.txt
+```
+Create a database:
+```bash
+cd AssessMe
+python manage.py migrate 
+```
+Load use case data to work with.
+```bash
+python manage.py loaddata use_case_data.json
+``` 
+
+Finally, run the development server:
+
+```bash
+python manage.py runserver
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+The project will be available at http://127.0.0.1:8000, Login using::
 
-### Jekyll Themes
+**Teacher**
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MarvinKweyu/AssessMe/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+username: `teacher`
+password: `teacher`
 
-### Support or Contact
+**Student**
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+username: `student`
+password: `student`
+
+
+## Contributions
+---
+Contributions are welcome.
+Do remember to take a look at the project [contribution guidelines](./CONTRIBUTING.md)
+
+## License
+---
+
+This project was inspired by [suhail's](https://github.com/suhailvs/django-schools) work on the django quiz application and is released under the [MIT License](https://github.com/MarvinKweyu/AssessMe/blob/master/LICENSE).
