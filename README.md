@@ -95,7 +95,21 @@ password: `student`
 Contributions are welcome.
 Do remember to take a look at the project [contribution guidelines](./CONTRIBUTING.md)
 
+
+## The AssessMe Contributor Board
+
+
+
+<div align="center">
+    <a href="https://github.com/MarvinKweyu/AssessMe/graphs/contributors">
+        <img alt="contributors' avatars" src="https://contrib.rocks/image?repo=MarvinKweyu/AssessMe" />
+    </a>
+</div>
+
+
 ## License
 ---
 
 This project was inspired by [suhail's](https://github.com/suhailvs/django-schools) work on the django quiz application and is released under the [MIT License](https://github.com/MarvinKweyu/AssessMe/blob/master/LICENSE).
+
+
