@@ -157,5 +157,6 @@ MESSAGE_TAGS = {
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 django_heroku.settings(locals())
-del DATABASES["default"]["OPTIONS"]["sslmode"]
+if not dotenv: # added this line because it was raising keyerror, when i tried to run locally, it basically deletes the herouku database 
+    del DATABASES["default"]["OPTIONS"]["sslmode"]
 
