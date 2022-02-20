@@ -87,11 +87,11 @@ WSGI_APPLICATION = "assessme.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-#     }
+#DATABASES = {
+     #"default": {
+         #"ENGINE": "django.db.backends.sqlite3",
+         #"NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+     #}
 # }
 
 DATABASES = {}
@@ -157,6 +157,5 @@ MESSAGE_TAGS = {
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 django_heroku.settings(locals())
-if not dotenv: # added this line because it was raising keyerror, when i tried to run locally, it basically deletes the herouku database 
-    del DATABASES["default"]["OPTIONS"]["sslmode"]
+del DATABASES["default"]["OPTIONS"]["sslmode"]
 
