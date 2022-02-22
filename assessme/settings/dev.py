@@ -9,8 +9,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 
-SECRET_KEY = os.getenv("SECRET_KEY")
-
+SECRET_KEY = "d$pxg6fisc4iwzk&vz^s_d0lkf&k63l5a8f!obktw!jg#4zvp3"
 
 DATABASES = {
     "default": {
