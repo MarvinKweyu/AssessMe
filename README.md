@@ -57,24 +57,24 @@ Create Virtual Env and Install the requirements:
 
 ```bash
 cd AssessMe
-python3 -m venv env
-source ./env/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 Create a database:
 ```bash
 cd AssessMe
-python manage.py migrate 
+python manage.py migrate --settings=assessme.settings.dev
 ```
 Load use case data to work with.
 ```bash
-python manage.py loaddata use_case_data.json
+python manage.py loaddata use_case_data.json --settings=assessme.settings.dev
 ``` 
 
 Finally, run the development server:
 
 ```bash
-python manage.py runserver
+python manage.py runserver --settings=assessme.settings.dev
 ```
 
 The project will be available at http://127.0.0.1:8000, Login using::
