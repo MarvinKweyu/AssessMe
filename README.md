@@ -15,7 +15,7 @@
 <p align="center">
   <!-- <b>AssessMe</b><br> -->
   <a href="https://assessme-project.herokuapp.com/">AssessMe Live</a> |
-  <a href="https://github.com/MarvinKweyu/AssessMe/releases">Docker image</a> 
+  <a href="https://hub.docker.com/r/marvinkweyu/assessme_web">Docker image</a> 
   <br><br>
   <img src="./img/assessme-project.png" alt="AssessMe">
 </p>
