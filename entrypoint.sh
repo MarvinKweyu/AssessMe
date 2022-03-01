@@ -19,6 +19,7 @@ email=admin@example.com
 password=pass
 
 python3 manage.py migrate --settings=assessme.settings.dev
+python manage.py loaddata use_case_data.json --settings=assessme.settings.dev
 echo "from django.contrib.auth.models import User; User.objects.create_superuser('$user', '$email', '$password')" | python3 manage.py shell --settings=assessme.settings.dev
 
 

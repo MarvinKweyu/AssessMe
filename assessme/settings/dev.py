@@ -1,6 +1,7 @@
 import os
 
 from assessme.settings.base import *
+
 from dotenv import load_dotenv
 
 load_dotenv()

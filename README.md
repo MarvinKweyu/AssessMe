@@ -16,15 +16,15 @@
 
 
 
- ### Table of Contents
- [ Key features](#Features)
+ # Table of Contents
+ - [ Key features](#Features)
 
- [ Running the project locally ](#Setup)
+ - [ Running AssessMe locally ](#Setup)
 
- [Contributions](#Contributions)
+ - [Contributions](#Contributions)
 
 
- [License](#License)
+ - [License](#License)
 
 
 
@@ -35,12 +35,8 @@
 - Quiz timer
 - Teacher download results option
 
-### Running application
----
-The latest release is running right here: [The Assessme Project](https://assessme-project.herokuapp.com/)
 
-## Setup
----
+# Setup
 ### Downloading the latest release.
 
 Knab yourself the latest release version from the page
@@ -48,9 +44,16 @@ Knab yourself the latest release version from the page
 
 
 ---
+### Docker Development
 
+In the root directory of the project, run the following command:
 
-### Development
+```bash
+docker-compose up --build
+
+```
+
+### Bare metal development
 
 
 Create Virtual Env and Install the requirements:
