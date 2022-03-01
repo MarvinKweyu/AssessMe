@@ -6,7 +6,8 @@ ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
 
 # deps
-RUN apk update && apk add postgresql-dev gcc python3-dev musl-dev
+RUN apk update 
+RUN apk add postgresql-dev gcc musl-dev python3-dev libffi-dev openssl-dev
 
 # app deps
 RUN pip install --upgrade pip
