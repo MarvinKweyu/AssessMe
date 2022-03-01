@@ -6,12 +6,19 @@
 [![Django Version](https://img.shields.io/badge/django-2.2-brightgreen.svg)](https://djangoproject.com)
 [![CircleCI](https://circleci.com/gh/MarvinKweyu/AssessMe.svg?style=svg)](https://circleci.com/gh/MarvinKweyu/AssessMe)
 ![Release](https://img.shields.io/github/v/release/MarvinKweyu/AssessMe?include_prereleases)
-![Contributors](https://img.shields.io/github/contributors/MarvinKweyu/AssessMe)
+![Contributors](https://img.shields.io/github/contributors/MarvinKweyu/AssessMe) 
 [![View](http://hits.dwyl.com/MarvinKweyu/AssessMe.svg)](http://hits.dwyl.com/MarvinKweyu/AssessMe)
-
 ![Docker](https://img.shields.io/docker/pulls/marvinkweyu/assessme_web?logo=AssessMe&style=flat
 )
 
+
+<p align="center">
+  <!-- <b>AssessMe</b><br> -->
+  <a href="https://assessme-project.herokuapp.com/">AssessMe Live</a> |
+  <a href="https://github.com/MarvinKweyu/AssessMe/releases">Docker image</a> 
+  <br><br>
+  <img src="./img/assessme-project.png" alt="AssessMe">
+</p>
 
  >An applicaition that allows teachers to create quizzes and students to
  take the quiz in relation to their interests
