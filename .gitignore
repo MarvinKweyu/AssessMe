@@ -91,5 +91,6 @@ __pycache__/
 local_settings.py
 
 .env
+.env.dev
 #  return incase fail
 db.sqlite3

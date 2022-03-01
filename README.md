@@ -16,15 +16,15 @@
 
 
 
- ### Table of Contents
- [ Key features](#Features)
+ # Table of Contents
+ - [ Key features](#Features)
 
- [ Running the project locally ](#Setup)
+ - [ Running AssessMe locally ](#Setup)
 
- [Contributions](#Contributions)
+ - [Contributions](#Contributions)
 
 
- [License](#License)
+ - [License](#License)
 
 
 
@@ -35,41 +35,32 @@
 - Quiz timer
 - Teacher download results option
 
-### Running application
----
-The latest release is running right here: [The Assessme Project](https://assessme-project.herokuapp.com/)
 
-## Setup
----
-### Downloading the latest release.
+# Setup
+**Downloading the latest release.**
 
 Knab yourself the latest release version from the page
 [release page](https://github.com/MarvinKweyu/AssessMe/releases)
 
 
 ---
+### Docker Preview
 
+Run the following command to pull and run the latest version of the docker image:
 
-### Development
+```bash
+docker run --rm marvinkweyu/assessme_web
+```
+
+### Bare metal development
 
 
 Create Virtual Env and Install the requirements:
 
 ```bash
 cd AssessMe
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+bash develop.sh
 ```
-Create a database:
-```bash
-cd AssessMe
-python manage.py migrate --settings=assessme.settings.dev
-```
-Load use case data to work with.
-```bash
-python manage.py loaddata use_case_data.json --settings=assessme.settings.dev
-``` 
 
 Finally, run the development server:
 
@@ -88,6 +79,12 @@ password: `teacher`
 
 username: `student`
 password: `student`
+
+## Tests
+
+```bash
+python manage.py test --settings=assessme.settings.dev
+```
 
 
 ## Contributions
