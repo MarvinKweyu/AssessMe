@@ -37,20 +37,19 @@
 
 
 # Setup
-### Downloading the latest release.
+**Downloading the latest release.**
 
 Knab yourself the latest release version from the page
 [release page](https://github.com/MarvinKweyu/AssessMe/releases)
 
 
 ---
-### Docker Development
+### Docker Preview
 
-In the root directory of the project, run the following command:
+Run the following command to pull and run the latest version of the docker image:
 
 ```bash
-docker-compose up --build
-
+docker run --rm marvinkweyu/assessme_web
 ```
 
 ### Bare metal development
@@ -60,19 +59,8 @@ Create Virtual Env and Install the requirements:
 
 ```bash
 cd AssessMe
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+bash develop.sh
 ```
-Create a database:
-```bash
-cd AssessMe
-python manage.py migrate --settings=assessme.settings.dev
-```
-Load use case data to work with.
-```bash
-python manage.py loaddata use_case_data.json --settings=assessme.settings.dev
-``` 
 
 Finally, run the development server:
 
@@ -91,6 +79,12 @@ password: `teacher`
 
 username: `student`
 password: `student`
+
+## Tests
+
+```bash
+python manage.py test --settings=assessme.settings.dev
+```
 
 
 ## Contributions

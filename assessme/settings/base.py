@@ -86,7 +86,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-# USE_TZ = True
+USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
@@ -132,3 +132,4 @@ MESSAGE_TAGS = {
 # Third party apps configuration
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+TEST_RUNNER = "redgreenunittest.django.runner.RedGreenDiscoverRunner"
