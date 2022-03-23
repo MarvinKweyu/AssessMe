@@ -55,10 +55,10 @@ Knab yourself the latest release version from the page
 ---
 ### Docker Preview
 
-Run the following command to pull and run the latest version of the docker image:
+Run the following command to run the latest version of the docker image:
 
 ```bash
-docker run --rm marvinkweyu/assessme_web
+docker-compose up
 ```
 
 ### Bare metal development
