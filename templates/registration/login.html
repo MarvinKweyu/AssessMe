@@ -8,33 +8,34 @@
 {% if form.non_field_errors %}
 <div class="alert alert-danger alert-dismissible fade show" role="alert">
   {% for error in form.non_field_errors %}
-  <p{% if forloop.last %} class="mb-0"{% endif %}>{{ error }}</p>
-  {% endfor %}
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
+  <p{% if forloop.last %} class="mb-0" {% endif %}>{{ error }}</p>
+    {% endfor %}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
 </div>
 {% endif %}
 <div class="container-fluid background">
-<div class="row justify-content-center">
-  <!-- background effect -->
-  <div id="particles-js">
-  <!-- <div class="col-lg-4 col-md-6 col-sm-8 col-12"> -->
-    <div class="login col-12">
-    <h2>Log in</h2>
-    <p> If you don't have an account,you can <a href="{%url 'student_signup'%}">sign up</a></p>
-      <form method="post" novalidate class="login-form">
-        {% csrf_token %}
-        <input type="hidden" name="next" value="{{ next }}">
-        {{ form.username|as_crispy_field }}
-        {{ form.password|as_crispy_field }}
-        <button type="submit" class="btn btn-primary">Log in</button>
-        <p>Forgot your password? <a href="#">Recover</a></p>
-      </form>
-    </div>
+  <div class="row justify-content-center">
+    <!-- background effect -->
+    <div id="particles-js">
+      <!-- <div class="col-lg-4 col-md-6 col-sm-8 col-12"> -->
+      <div class="login col-12">
+
+        <h2>Log in</h2>
+        <p> If you don't have an account,you can <a href="{%url 'student_signup'%}">sign up</a></p>
+        <form method="post" novalidate class="login-form">
+          {% csrf_token %}
+          <input type="hidden" name="next" value="{{ next }}">
+          {{ form.username|as_crispy_field }}
+          {{ form.password|as_crispy_field }}
+          <button type="submit" class="btn btn-primary">Log in</button>
+          <p>Forgot your password? <a href="#">Recover</a></p>
+        </form>
+      </div>
 
     </div>
 
   </div>
-  </div>
+</div>
 {% endblock %}
