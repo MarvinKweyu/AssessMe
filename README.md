@@ -61,6 +61,8 @@ Run the following command to run the latest version of the docker image:
 docker-compose up
 ```
 
+
+
 ### Bare metal development
 
 
