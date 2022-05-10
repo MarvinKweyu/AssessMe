@@ -2,29 +2,38 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[![Python Version](https://img.shields.io/badge/python-3.7-brightgreen.svg)](https://python.org)
-[![Django Version](https://img.shields.io/badge/django-2.2-brightgreen.svg)](https://djangoproject.com)
+[![Python Version](https://img.shields.io/badge/python-3.9-brightgreen.svg)](https://python.org)
+[![Django Version](https://img.shields.io/badge/django-3.2-brightgreen.svg)](https://djangoproject.com)
 [![CircleCI](https://circleci.com/gh/MarvinKweyu/AssessMe.svg?style=svg)](https://circleci.com/gh/MarvinKweyu/AssessMe)
 ![Release](https://img.shields.io/github/v/release/MarvinKweyu/AssessMe?include_prereleases)
-![Contributors](https://img.shields.io/github/contributors/MarvinKweyu/AssessMe)
-![Downloads](https://img.shields.io/github/downloads/MarvinKweyu/AssessMe/total?style=flat)
+![Contributors](https://img.shields.io/github/contributors/MarvinKweyu/AssessMe) 
 [![View](http://hits.dwyl.com/MarvinKweyu/AssessMe.svg)](http://hits.dwyl.com/MarvinKweyu/AssessMe)
+![Docker](https://img.shields.io/docker/pulls/marvinkweyu/assessme_web?logo=AssessMe&style=flat
+)
 
+
+<p align="center">
+  <!-- <b>AssessMe</b><br> -->
+  <a href="https://assessme-project.herokuapp.com/">AssessMe Live</a> |
+  <a href="https://hub.docker.com/r/marvinkweyu/assessme_web">Docker image</a> 
+  <br><br>
+  <img src="./img/assessme-project.png" alt="AssessMe">
+</p>
 
  >An applicaition that allows teachers to create quizzes and students to
  take the quiz in relation to their interests
 
 
 
- ### Table of Contents
- [ Key features](#Features)
+ # Table of Contents
+ - [ Key features](#Features)
 
- [ Running the project locally ](#Setup)
+ - [ Running AssessMe locally ](#Setup)
 
- [Contributions](#Contributions)
+ - [Contributions](#Contributions)
 
 
- [License](#License)
+ - [License](#License)
 
 
 
@@ -36,49 +45,57 @@
 - Teacher download results option
 
 
-## Setup
----
-### Downloading the latest release.
+# Setup
+**Downloading the latest release.**
 
-Get the latest release version from the page
+Knab yourself the latest release version from the page
 [release page](https://github.com/MarvinKweyu/AssessMe/releases)
+
+
+---
+### Docker Preview
+
+Run the following command to run the latest version of the docker image:
+
+```bash
+docker-compose up
+```
+
+
+
+### Bare metal development
 
 
 Create Virtual Env and Install the requirements:
 
 ```bash
 cd AssessMe
-python3 -m venv env
-source ./env/bin/activate
-pip install -r requirements.txt
+bash develop.sh
 ```
-Create a database:
-```bash
-cd AssessMe
-python manage.py migrate 
-```
-Load use case data to work with.
-```bash
-python manage.py loaddata use_case_data.json
-``` 
 
 Finally, run the development server:
 
 ```bash
-python manage.py runserver
+python manage.py runserver --settings=assessme.settings.dev
 ```
 
 The project will be available at http://127.0.0.1:8000, Login using::
 
 **Teacher**
 
-username: `sumee`
-password: `sumee1911`
+username: `teacher`
+password: `teacher`
 
 **Student**
 
-username: `suhail`
-password: `sumee1910`
+username: `student`
+password: `student`
+
+## Tests
+
+```bash
+python manage.py test --settings=assessme.settings.dev
+```
 
 
 ## Contributions
@@ -86,7 +103,21 @@ password: `sumee1910`
 Contributions are welcome.
 Do remember to take a look at the project [contribution guidelines](./CONTRIBUTING.md)
 
+
+## The AssessMe Contributor Board
+
+
+
+<div align="center">
+    <a href="https://github.com/MarvinKweyu/AssessMe/graphs/contributors">
+        <img alt="contributors' avatars" src="https://contrib.rocks/image?repo=MarvinKweyu/AssessMe" />
+    </a>
+</div>
+
+
 ## License
 ---
 
 This project was inspired by [suhail's](https://github.com/suhailvs/django-schools) work on the django quiz application and is released under the [MIT License](https://github.com/MarvinKweyu/AssessMe/blob/master/LICENSE).
+
+

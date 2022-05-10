@@ -1,8 +1,26 @@
-FROM python:3
+FROM python:3.9.6-alpine
+WORKDIR /usr/src/assessme
+
+# env variables
 ENV PYTHONUNBUFFERED 1
-RUN mkdir /code
-WORKDIR /code
-ADD requirements.txt /code/
+ENV PYTHONDONTWRITEBYTECODE 1
+
+# deps
+RUN apk update 
+RUN apk add postgresql-dev gcc musl-dev python3-dev libffi-dev openssl-dev
+
+# app deps
+RUN pip install --upgrade pip
+COPY ./requirements.txt .
+
 RUN pip install -r requirements.txt
-ADD . /code/
-CMD sh init.sh && python3 manage.py runserver 0.0.0.0:8000
+
+# entrypoint
+COPY ./entrypoint.sh .
+RUN sed -i 's/\r$//g' /usr/src/assessme/entrypoint.sh
+
+
+COPY . .
+
+# run entrypoint
+ENTRYPOINT [ "/usr/src/assessme/entrypoint.sh" ]
