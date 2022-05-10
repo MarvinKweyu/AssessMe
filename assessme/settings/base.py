@@ -133,3 +133,4 @@ MESSAGE_TAGS = {
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 TEST_RUNNER = "redgreenunittest.django.runner.RedGreenDiscoverRunner"
+ALLOWED_HOSTS = ["assessme-project.herokuapp.com"]
