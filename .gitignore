@@ -93,4 +93,5 @@ local_settings.py
 .env
 .env.dev
 #  return incase fail
+.venv/
 db.sqlite3
