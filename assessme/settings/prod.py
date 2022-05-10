@@ -8,7 +8,10 @@ load_dotenv()
 # since it's running on my machine, show me the errors
 DEBUG = False
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS")
+# once heroku fixes automatic deployment, we can use this
+# ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS")
+
+ALLOWED_HOSTS = ["assessme-project.herokuapp.com"]
 
 DATABASES = {}
 DATABASES["default"] = dj_database_url.config(conn_max_age=600)
