@@ -19,4 +19,4 @@ ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS")
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # show mail messages on the terminal
-EMAIL_BACKEND = os.getenv("EMAIL_HOST_USER")
+# EMAIL_BACKEND = os.getenv("EMAIL_HOST_USER")
