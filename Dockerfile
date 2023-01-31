@@ -1,13 +1,13 @@
 FROM python:3.9.6-alpine
-WORKDIR /usr/src/assessme
+WORKDIR /myapp
 
 # env variables
 ENV PYTHONUNBUFFERED 1
+# prevent pyc file creation
 ENV PYTHONDONTWRITEBYTECODE 1
 
 # deps
-RUN apk update 
-RUN apk add postgresql-dev gcc musl-dev python3-dev libffi-dev openssl-dev
+RUN apk update && apk add postgresql-dev gcc musl-dev python3-dev libffi-dev openssl-dev
 
 # app deps
 RUN pip install --upgrade pip
@@ -17,10 +17,10 @@ RUN pip install -r requirements.txt
 
 # entrypoint
 COPY ./entrypoint.sh .
-RUN sed -i 's/\r$//g' /usr/src/assessme/entrypoint.sh
+RUN sed -i 's/\r$//g' /myapp/entrypoint.sh
 
 
 COPY . .
 
 # run entrypoint
-ENTRYPOINT [ "/usr/src/assessme/entrypoint.sh" ]
+ENTRYPOINT [ "/myapp/entrypoint.sh" ]

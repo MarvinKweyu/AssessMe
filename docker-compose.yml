@@ -6,7 +6,7 @@ services:
     
     command: python manage.py runserver 0.0.0.0:8000 --settings=assessme.settings.dev
     volumes:
-      - .:/usr/src/assessme/
+      - .:/myapp
       
     ports:
       - "8000:8000"
