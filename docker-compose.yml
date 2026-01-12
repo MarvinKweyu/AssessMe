@@ -1,15 +1,13 @@
-version: '3.8'
-
 services:
   web:
     build: .
-    
+    container_name: assessme
     command: python manage.py runserver 0.0.0.0:8000 --settings=assessme.settings.dev
     volumes:
       - .:/myapp
       
     ports:
-      - "8000:8000"
+      - "8001:8000"
     env_file:
     - ./.env.dev
     depends_on:
@@ -17,6 +15,7 @@ services:
   
   db:
     image: postgres:13.0-alpine
+    container_name: assessme_db
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
